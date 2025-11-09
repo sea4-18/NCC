@@ -20,6 +20,8 @@ scoreboard objectives add noi.lookup_mana dummy
 scoreboard objectives add noi.flint_count dummy
 scoreboard objectives add noi.variant dummy
 scoreboard objectives add noi.mana_math dummy
+scoreboard objectives add noi.id dummy
+scoreboard objectives add noi.bound_id dummy
 
 scoreboard players set #-1 noi.math -1
 scoreboard players set #2 noi.math 2

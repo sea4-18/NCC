@@ -32,6 +32,7 @@ execute as @e[type=minecraft:item_display,tag=noi.spellholder_display] at @s run
 execute at @e[type=interaction,tag=noi.wandholder,tag=noi.empty] positioned ~ ~2 ~ run particle enchant ~ ~ ~ 0 0 0 .5 1
 execute at @e[type=interaction,tag=noi.spellholder,tag=noi.empty,tag=!noi.locked] positioned ~ ~1 ~ run particle enchanted_hit
 
+#I could select for the markers on the tools inside of spelldelay tick instead of using this line
 execute as @e[type=item_display,tag=noi.thrown_tool] at @s on passengers run function noi:spell/extra/thrown_tool with entity @s data
 
 execute as @e[type=item_display,tag=noi.thrown_iron_nugget] at @s run function noi:spell/extra/iron_nugget_tick

@@ -1,4 +1,4 @@
-execute if entity @s[scores={noi.lifetime=0},tag=!noi.custom_trigger] at @s run function noi:spell/extra/const_direction_trigger
+execute if entity @s[scores={noi.lifetime=0},tag=!noi.custom_trigger] at @s run function noi:spell/extra/const_direction_trigger with entity @s data
 execute if entity @s[scores={noi.lifetime=0},tag=noi.spelldelay.filled_map] at @s run function noi:spell/extra/filled_map_trigger
 execute if entity @s[scores={noi.lifetime=0},tag=noi.spelldelay.map] at @s run function noi:spell/extra/map_trigger
 

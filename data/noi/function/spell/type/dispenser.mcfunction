@@ -20,9 +20,10 @@ execute if score i noi.math matches 1.. run function noi:spell/extra/dispenser_l
 #run the scrambled spell in 1s (to make it less worth it to spam dispensers for cheaper spells)
 summon marker ~ ~ ~ {Tags:["noi.spelldelay","current2"]}
 data modify entity @e[tag=current2,limit=1] data set from storage temp:local macro
-tp @e[tag=current2] ~ ~ ~ facing ^ ^ ^1
-scoreboard players set @e[tag=current2] noi.lifetime 20
-tag @e[tag=current2] remove current2
+execute store result score @e[type=marker,tag=current2,limit=1,distance=..1] noi.bound_id run function noi:get_id
+tp @e[type=marker,tag=current2,distance=..1] ~ ~ ~ facing ^ ^ ^1
+scoreboard players set @e[type=marker,tag=current2,distance=..1] noi.lifetime 20
+tag @e[type=marker,tag=current2,distance=..1] remove current2
 
 
 playsound minecraft:block.dispenser.launch player @a[distance=..4]

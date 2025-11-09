@@ -4,6 +4,7 @@ execute as @e[tag=current] run tp @s ^ ^ ^1.5 facing ^ ^ ^2
 scoreboard players set @e[tag=current] noi.lifetime 150
 
 execute as @e[tag=current2] run tp @s ~ ~ ~ facing ^ ^ ^1
+execute store result score @e[type=marker,tag=current2,limit=1,distance=..1] noi.bound_id run function noi:get_id
 ride @e[tag=current2,limit=1] mount @e[tag=current,limit=1]
 
 tag @e[tag=current2] remove current2

@@ -1,7 +1,7 @@
 execute on vehicle run tag @s add vehicle
 
-$execute at @e[tag=vehicle] rotated as @s run tp @e[tag=vehicle] ^ ^ ^$(speed)
-execute as @e[tag=vehicle] at @s run tp @s ~ ~ ~ ~10 ~ 
+$execute rotated as @s on vehicle run tp @s ^ ^ ^$(speed)
+execute as @e[tag=vehicle] positioned as @s run rotate @s ~10 ~
 
 execute if entity @s[tag=noi.tooltype.generic_hoe] as @e[tag=vehicle] at @s positioned ~-.2 ~ ~-.2 if block ~ ~ ~ #minecraft:mineable/hoe run function noi:spell/extra/thrown_tool_break
 execute if entity @s[tag=noi.tooltype.generic_hoe] as @e[tag=vehicle] at @s positioned ~-.2 ~ ~.2 if block ~ ~ ~ #minecraft:mineable/hoe run function noi:spell/extra/thrown_tool_break

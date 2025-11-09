@@ -5,6 +5,7 @@ $tag @e[tag=current2] add noi.tooltype.$(1att)
 $tag @e[tag=current2] add noi.tool.$(1)
 ride @e[tag=current2,limit=1] mount @e[tag=current,limit=1]
 execute as @e[tag=current2] run function noi:spell/extra/thrown_tool_init
+execute store result score @e[type=marker,tag=current2,limit=1,distance=..1] noi.bound_id run function noi:get_id
 
 tag @e[tag=current] remove current
 tag @e[tag=current2] remove current2
