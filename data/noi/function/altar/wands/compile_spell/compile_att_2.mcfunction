@@ -15,17 +15,3 @@ execute if entity @s[predicate=noi:generic_slab] run data modify storage temp:lo
 execute if entity @s[predicate=noi:generic_wall] run data modify storage temp:local att set value "generic_wall"
 execute if entity @s[predicate=noi:generic_stair] run data modify storage temp:local att set value "generic_stair"
 $data modify storage temp:local spell.$(path)att set from storage temp:local att
-
-#gonna redo this at some point so that I dont have to use the dumb mana cost item tags
-scoreboard players set mana noi.math 0
-#execute if entity @s[predicate=noi:2_mana_mult] run scoreboard players operation mana noi.math *= #2 noi.math
-#execute if entity @s[predicate=noi:0_75_mana_mult] run scoreboard players operation mana noi.math *= #3 noi.math
-#execute if entity @s[predicate=noi:0_75_mana_mult] run scoreboard players operation mana noi.math /= #4 noi.math
-execute if entity @s[predicate=noi:1_mana_add] run scoreboard players add mana noi.math 100
-execute if entity @s[predicate=noi:3_mana_add] run scoreboard players add mana noi.math 300
-execute if entity @s[predicate=noi:5_mana_add] run scoreboard players add mana noi.math 500
-execute if entity @s[predicate=noi:10_mana_add] run scoreboard players add mana noi.math 1000
-execute if entity @s[predicate=noi:20_mana_add] run scoreboard players add mana noi.math 2000
-execute if entity @s[predicate=noi:115_mana_add] run scoreboard players add mana noi.math 11500
-
-$execute store result storage temp:local manaspell.$(path)mana int 1 run scoreboard players get mana noi.math

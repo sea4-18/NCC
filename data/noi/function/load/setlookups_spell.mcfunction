@@ -23,7 +23,7 @@ scoreboard players set honey_block noi.lookup 6
 scoreboard players set anvil noi.lookup 7
 #att and ball mod
 scoreboard players set generic_dye noi.lookup 8
-#counts for chain spell
+#counts for iron chain spell
 scoreboard players set acacia_boat noi.lookup 9
 scoreboard players set acacia_chest_boat noi.lookup 9
 scoreboard players set amethyst_shard noi.lookup 9
@@ -113,3 +113,12 @@ scoreboard players set wheat noi.lookup 9
 scoreboard players set wind_charge noi.lookup 9
 scoreboard players set wither_skeleton_skull noi.lookup 9
 scoreboard players set zombie_head noi.lookup 9
+#functions
+scoreboard players set copper_bulb noi.lookup 10
+scoreboard players set exposed_copper_bulb noi.lookup 10
+scoreboard players set weathered_copper_bulb noi.lookup 10
+scoreboard players set oxidized_copper_bulb noi.lookup 10
+scoreboard players set waxed_copper_bulb noi.lookup 10
+scoreboard players set waxed_exposed_copper_bulb noi.lookup 10
+scoreboard players set waxed_weathered_copper_bulb noi.lookup 10
+scoreboard players set waxed_oxidized_copper_bulb noi.lookup 10

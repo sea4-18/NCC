@@ -14,3 +14,4 @@ scoreboard players set deepslate_diamond_ore noi.lookup_mana 2
 scoreboard players set diamond noi.lookup_mana 2
 scoreboard players set diamond_ore noi.lookup_mana 2
 scoreboard players set jukebox noi.lookup_mana 2
+

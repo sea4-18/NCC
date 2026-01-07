@@ -1,3 +1,5 @@
+# Run to clear all attributes that my datapack may have given to your entity
+
 attribute @s gravity modifier remove noi_gravity
 
 attribute @s scale modifier remove noi_scale

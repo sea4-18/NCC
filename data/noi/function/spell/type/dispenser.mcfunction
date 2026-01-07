@@ -9,7 +9,7 @@ scoreboard players set i noi.math 15
 function noi:spell/extra/dispenser_loop_count
 
 #randomize the order of the i next spells
-$data modify storage temp:local macro set value {UUID:$(UUID),1:"null",2:"null",3:"null",4:"null",5:"null",6:"null",7:"null",8:"null",9:"null",10:"null",11:"null",12:"null",13:"null",14:"null",15:"null",16:"null",1att:"null",2att:"null",3att:"null",4att:"null",5att:"null",6att:"null",7att:"null",8att:"null",9att:"null",10att:"null",11att:"null",12att:"null",13att:"null",14att:"null",15att:"null",16att:"null"}
+$data modify storage temp:local macro set value {UUID:$(UUID),extra:$(extra),1:"null",2:"null",3:"null",4:"null",5:"null",6:"null",7:"null",8:"null",9:"null",10:"null",11:"null",12:"null",13:"null",14:"null",15:"null",16:"null",1att:"null",2att:"null",3att:"null",4att:"null",5att:"null",6att:"null",7att:"null",8att:"null",9att:"null",10att:"null",11att:"null",12att:"null",13att:"null",14att:"null",15att:"null",16att:"null"}
     #generates a random number 0..i-1, which is used as an index in the list of spells to be shuffled
 execute store result score #random noi.math run random value 0..2147483646
 execute store result storage temp:local random int 1 run scoreboard players operation #random noi.math %= i noi.math

@@ -1,6 +1,6 @@
 execute if entity @e[tag=current,tag=noi.mirrored] positioned ^1 ^ ^ run tp @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] ^-1 ^ ^
 
-execute as @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] run function noi:altar/wands/compile_spell
+execute as @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] run function noi:altar/wands/compile_spell/main
 function noi:altar/wands/compile_lore
 data modify entity @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] item.components.minecraft:lore set from storage temp:local wand_lore
 item replace entity @s weapon.mainhand from entity @e[type=item_display,distance=...0001,tag=noi.spellholder_display,limit=1] container.0

@@ -13,7 +13,7 @@ execute unless score #random noi.math matches 10.. if score #random2 noi.math ma
 
 execute store result score #random noi.math run random value 1..2
 execute if score #random noi.math matches 2.. run scoreboard players set lonely noi.math 0
-execute if score #random noi.math matches 2.. store result storage temp:macro random int 1 run random value 0..175
+execute if score #random noi.math matches 2.. store result storage temp:macro random int 1 run random value 0..177
 execute if score #random noi.math matches 2.. run function noi:wand/insert_wand_adjective with storage temp:macro
 
 execute store result storage temp:macro random int 1 run random value 0..28
@@ -23,8 +23,8 @@ execute store result score #random noi.math run random value 1..4
 execute if score #random noi.math matches 2.. run scoreboard players set lonely noi.math 0
 execute if score #random noi.math matches 2.. run data modify storage temp:local wandTitle append value "of "
 execute if score #random noi.math matches 2.. store result score #random2 noi.math run random value 1..4
-execute if score #random noi.math matches 2.. if score #random2 noi.math matches 2.. store result storage temp:macro random int 1 run random value 0..41
+execute if score #random noi.math matches 2.. if score #random2 noi.math matches 2.. store result storage temp:macro random int 1 run random value 0..44
 execute if score #random noi.math matches 2.. if score #random2 noi.math matches 2.. run function noi:wand/insert_abstract_noun_adjective with storage temp:macro
-execute if score #random noi.math matches 2.. store result storage temp:macro random int 1 run random value 0..83
+execute if score #random noi.math matches 2.. store result storage temp:macro random int 1 run random value 0..86
 execute if score #random noi.math matches 2.. run function noi:wand/insert_abstract_noun with storage temp:macro
 
