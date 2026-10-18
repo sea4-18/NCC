@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "121",
+    " 2 "
+  ],
+  "key": {
+    "1": "netherite_ingot",
+    "2": "stick"
+  },
+  "result": {
+    "id": "minecraft:warped_fungus_on_a_stick",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Netherite Wand",
+        "italic": false
+      },
+      "minecraft:custom_data": {"noi.crafted_wand_netherite":1, "noi.crafted_wand":1},
+      "minecraft:lore": [
+        {
+          "text": "Base Cost: 10",
+          "color": "#cc3ed6",
+          "italic": false
+        },
+        {
+          "text": "Size: 10",
+          "color": "#9696FF",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

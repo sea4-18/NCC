@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "424",
+    "131",
+    "414"
+  ],
+  "key": {
+    "1": "copper_ingot",
+    "2": "lapis_block",
+    "3": "glass_bottle",
+    "4": "amethyst_shard"
+  },
+  "result": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:item_name": "[{\"text\":\"Greater Mana Potion\",\"italic\":false}]",
+      "minecraft:custom_data": {"noi.greater_mana_potion":1},
+      "minecraft:max_stack_size": 16,
+      "minecraft:rarity": "uncommon",
+      "minecraft:lore": [
+        "{\"color\":\"#D67428\",\"italic\":false,\"text\":\"Mana: 100\"}",
+        "{\"color\":\"#D67428\",\"italic\":false,\"text\":\"Max: 500\"}"
+      ],
+      "potion_contents": {"custom_color": 13645402}
+    }
+  }
+}
